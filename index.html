@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+
+    <title>JavaScript Random Equation Game</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <hr>
+        <h1>JavaScript Random Equation Game</h1>
+        <hr>
+      </header>
+
+
+      <section id="body">
+        
+        <div>
+          <div id="left">
+            <h2 id="answerText">Answer the equation below:</h2>
+            <div id="questionBox">
+              <p id="num1">0</p><p id="operator">+</p><p id="num2">0</p>
+            </div>
+            <p id="equals">=</p><input id="guessInput" placeholder="0">
+            <button id="answerBtn">Answer</button>
+            <button id="skipBtn">Skip</button>            
+          </div>
+          <div class="col-sm-3" id="right">
+            <h2>Score:</h2>
+            <div id="scoreField">0</div>
+            <small>Every correct answer gives +1 point, incorrect answers give -1. Skip a question at no cost.</small><hr/>
+            <small>WARNING: Reset button will reset everything, and delete all saves. To simply start a new game, refresh the page.</small>
+          </div>
+        </div>
+
+      </section>
+      <div id="message"></div>
+
+      <section id="saveArea">
+        <input id="saveName" placeholder="Name">
+        <button id="saveBtn">Save</button>
+        <button id="loadBtn">Load</button>
+        <button id="resetBtn">Reset</button>
+        <div id="saveMessage">Enter a name to save or load</div>
+        <ul id="saveList">
+        </ul>
+    </div>
+    
+    <!-- Your code... -->
+    <script type="text/javascript" src="main.js"></script>
+
+  </body>
+</html>
